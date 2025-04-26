@@ -1,0 +1,33 @@
+main {
+    gap: 40px;
+}
+
+nav {
+    text-align: center;
+}
+
+nav>ul>li {
+    width: min-content;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.6rem;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 15px rgba(0, 0, 0, .4);
+}
+
+nav>ul>li:hover {
+    text-shadow: 1px 1px 15px rgb(0, 0, 0, .8);
+}
+
+nav>ul>li:last-child {
+    margin-bottom: 0;
+}
+
+nav>ul>li::marker {
+    content: attr(data-marker);
+}
+
+nav>ul>li:last-child {
+    margin-bottom: none;
+}

@@ -1,0 +1,98 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 50px;
+    width: 90vw;
+}
+
+a[href="index.html"] {
+    font-size: 1.1rem;
+    color: black;
+}
+
+a[href="index.html"]:hover {
+    font-size: 1.1rem;
+    color: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+nav.center {
+    padding-left: 40px;
+    justify-content: flex-end;
+}
+
+main {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+}
+
+.title-container {
+    align-self: center;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+img {
+    transition: .5s transform;
+}
+
+img:hover {
+    transform: rotate(5deg);
+}
+
+.title-container>div {
+    align-self: stretch;
+    padding-left: 5vw;
+    margin-left: 5vw;
+    border-left: solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+main>a[href="index.html"] {
+    margin: 20px 0 20px 0;
+}
+
+code {
+    font-size: 1.2rem;
+}
+
+dl {
+    margin: 20px 0 20px 0;
+    font-size: 1.2rem;
+}
+
+dt {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+dd {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+
+    .title-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .title-container>div {
+        padding: 0;
+        margin: 0;
+        border-left: none;
+    }
+}

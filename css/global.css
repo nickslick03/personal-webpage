@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(193, 128, 54, 0.9), rgba(141, 59, 21, 0.9)), url(../images/background/wood-background.jpg);
+    background-size: cover;
+    font-family: 'Cabin', sans-serif;
+}
+
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+p:last-of-type {
+    margin: 0;
+}
+
+img {
+    height: 180px;
+    border: 20px solid rgb(210, 210, 210);
+    border-radius: 2px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .6);
+}
+
+nav.center {
+    height: min-content;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+a[href="about.html"],
+a[href="contact.html"] {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+    padding: 8px;
+    background-color: rgb(230, 190, 135);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
+}
+
+a[href="contact.html"] {
+    font-weight: bold;
+}
+
+a[href="about.html"]:hover,
+a[href="contact.html"]:hover {
+    background-color: rgb(225, 200, 165);
+}
+
+a[href="about.html"]:active,
+a[href="contact.html"]:active {
+    background-color: rgb(180, 145, 90);
+}
